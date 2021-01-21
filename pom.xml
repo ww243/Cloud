@@ -12,6 +12,9 @@
         <module>colud_1commons</module>
         <module>cloud_2eurekaserver</module>
         <module>cloud_3eurekaclient</module>
+        <module>cloud_4consulclient</module>
+        <module>cloud_5users</module>
+        <module>cloud_6videos</module>
     </modules>
 
     <!--定义springcloud使用版本号-->
