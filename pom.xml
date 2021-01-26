@@ -17,6 +17,7 @@
         <module>cloud_6videos</module>
         <module>cloud_07emps</module>
         <module>cloud_08depts</module>
+        <module>cloud_09dashboard</module>
     </modules>
 
     <!--定义springcloud使用版本号-->
