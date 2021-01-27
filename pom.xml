@@ -18,6 +18,8 @@
         <module>cloud_07emps</module>
         <module>cloud_08depts</module>
         <module>cloud_09dashboard</module>
+        <module>cloud_10client01</module>
+        <module>cloud_11client02</module>
     </modules>
 
     <!--定义springcloud使用版本号-->
