@@ -20,6 +20,7 @@
         <module>cloud_09dashboard</module>
         <module>cloud_10client01</module>
         <module>cloud_11client02</module>
+        <module>cloud_12gateway</module>
     </modules>
 
     <!--定义springcloud使用版本号-->

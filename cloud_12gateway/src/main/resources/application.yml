@@ -1,0 +1,36 @@
+server:
+  port: 8990
+spring:
+  application:
+    name: gateway
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+    gateway:
+      routes:
+        - id: client01_route
+          #uri: http://localhost:8987/
+          uri: lb://CLIENT01
+          predicates:
+            - Path=/client01/**
+            #- After=2021-01-28T19:55:41.110+08:00[Asia/Shanghai]  #在指定时间之后访问
+            #- Before=2021-01-28T19:55:41.110+08:00[Asia/Shanghai] #在指定时间之前访问
+            #在两个指定的时间中进行访问
+            #- Between=2021-01-28T19:55:41.110+08:00[Asia/Shanghai],2021-01-28T19:55:41.110+08:00[Asia/Shanghai]
+            #- Cookie=username,ljn
+            - Cookie=username,[A-Za-z0-9]+
+            #- Header=X-Request-Id, \d+
+        - id: client02_route
+          #uri: http://localhost:8988/
+          uri: lb://CLIENT02
+          predicates:
+            - Path=/client02/**
+      discovery:
+        locator:
+          enabled: false   #开启根据服务名获取服务名获取服务列表进行负载均衡转发
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
