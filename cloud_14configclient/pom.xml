@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>Cloud</artifactId>
+        <groupId>com.my</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>cloud_14configclient</artifactId>
+
+    <dependencies>
+
+        <!--commons-->
+        <dependency>
+            <groupId>com.my</groupId>
+            <artifactId>colud_1commons</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!--引入config client的依赖-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+
+
+       <!-- &lt;!&ndash;springcloud bus 项目启动立即连接远程rabbitmq&ndash;&gt;
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+        </dependency>-->
+
+
+
+
+    </dependencies>
+</project>

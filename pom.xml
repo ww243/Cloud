@@ -21,6 +21,8 @@
         <module>cloud_10client01</module>
         <module>cloud_11client02</module>
         <module>cloud_12gateway</module>
+        <module>cloud_13configserver</module>
+        <module>cloud_14configclient</module>
     </modules>
 
     <!--定义springcloud使用版本号-->
