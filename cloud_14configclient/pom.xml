@@ -25,12 +25,11 @@
             <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
 
-
-       <!-- &lt;!&ndash;springcloud bus 项目启动立即连接远程rabbitmq&ndash;&gt;
+        <!--springcloud bus 项目启动立即连接远程RabbitMQ -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-bus-amqp</artifactId>
-        </dependency>-->
+        </dependency>
 
 
 
